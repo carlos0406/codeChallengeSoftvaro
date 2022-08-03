@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import Hero from '../components/container/Hero';
 import Booking from '../components/container/Booking';
 import Share from '../components/container/Share';
@@ -10,14 +9,12 @@ import Diary from '../components/container/Diary';
 import Host from '../components/container/Host';
 import Footer from '../components/container/Footer';
 import Header from '../components/container/Header';
+import styles from  '../styles/pages/lading.module.scss'
 
-const LandingPageStyle = styled.div`
-	background-color: #ffffff;
-`;
 
 function LandingPage() {
-    return (
-		<LandingPageStyle>
+	return (
+		<div className={styles.lading}>
 			<Header />
 			<Hero />
 			<Booking />
@@ -28,7 +25,7 @@ function LandingPage() {
 			<Diary />
 			<Host />
 			<Footer />
-		</LandingPageStyle>
+		</div>
 
 	);
 }

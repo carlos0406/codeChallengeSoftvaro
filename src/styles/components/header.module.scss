@@ -1,0 +1,64 @@
+.header{
+
+	position: absolute;
+	height: 64px;
+	width: 100%;
+	border-radius: 0px;
+	z-index: 99;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	.header-link {
+		color: #ffffff;
+		text-align: center;
+		text-decoration: none;
+		margin-right: 32px;
+		margin-top: 28px;
+	}
+	.badge img {
+		width: 48px;
+		height: 64px;
+		margin-left: 20px;
+		margin-right: 40px;
+	}
+	.left-header {
+		display: flex;
+	}
+	.right-header {
+		display: flex;
+		justify-content: flex-end;
+		margin-right: 32px;
+	}
+	.header-button {
+		display: grid;
+		place-items: center;
+		margin-top: 16px;
+		height: 44px;
+		width: 234px;
+		border-radius: 4px;
+		border: none;
+		background-color: #00a870;
+		color: #ffffff;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	.sign-in {
+		margin-left: 23px;
+		margin-top: 28px;
+	}
+
+	@media screen and (max-width: 1000px) {
+		.sign-in {
+			display: none;
+		}
+		.link1 {
+			display: none;
+		}
+		.link2 {
+			display: none;
+		}
+		.link3{
+			display: none;
+		}
+	}
+}
