@@ -1,0 +1,48 @@
+.framework{
+	height: 380px;
+	background: #f2f2f2;
+	display: grid;
+	justify-items: center;
+
+	.framework-content {
+		text-align: center;
+		margin-top: 96px;
+	}
+	.framework-text {
+		width: 784px;
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+	.read-link span {
+		color: #5e20a4;
+		text-decoration: underline;
+		text-decoration-color: #5e20a4;
+	}
+
+	@media screen and (max-width: 1000px) {
+		height: 476px;
+
+		.framework-content {
+			width: 360px;
+			margin-top: 64px;
+		}
+		.framework-text {
+			width: 328px;
+			margin-left: 16px;
+			margin-right: 16px;
+			margin-top: 16px;
+			margin-bottom: 24px;
+		}
+		h2 {
+			font-size: 22px;
+			width: 245px;
+			margin-left: 60px;
+			margin-right: 60px;
+		}
+		.read-link span {
+			width: 328px;
+			margin-left: 16px;
+			margin-right: 16px;
+		}
+	}
+}
