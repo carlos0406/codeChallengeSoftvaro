@@ -9,7 +9,7 @@ import Diary from '../components/container/Diary';
 import Host from '../components/container/Host';
 import Footer from '../components/container/Footer';
 import Header from '../components/container/Header';
-import styles from  '../styles/pages/lading.module.scss'
+import styles from '../styles/pages/lading.module.scss'
 
 
 function LandingPage() {

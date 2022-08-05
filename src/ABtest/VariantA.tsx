@@ -1,9 +1,12 @@
 import React from 'react';
-import { Link,BrowserRouter as Router } from 'react-router-dom';
+import { Link, BrowserRouter as Router } from 'react-router-dom';
 import PlayButton from '../utils/PlayButton.svg';
 import styles from '../styles/ABtest/variant.module.scss'
 
-function VariantA(props) {
+interface VariantAProps {
+	clickAction: () => void;
+}
+function VariantA({ clickAction }: VariantAProps) {
 	return (
 		<div className={styles.variant}>
 			<h1>Easily create or join a local nanny share with Hapu</h1>
@@ -13,7 +16,7 @@ function VariantA(props) {
 			</h2>
 			<Router>
 				<Link
-					onClick={props.clickAction}
+					onClick={clickAction}
 					className={styles['play-button']}
 					to='/play'
 				>

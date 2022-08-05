@@ -1,9 +1,13 @@
 import React from 'react';
-import { Link,BrowserRouter as Router  } from 'react-router-dom';
+import { Link, BrowserRouter as Router } from 'react-router-dom';
 import PlayButton from '../utils/PlayButton.svg';
 import styles from '../styles/ABtest/variant.module.scss'
 
-function VariantB(props) {
+interface VariantBProps {
+	clickAction: () => void;
+}
+
+function VariantB({ clickAction }: VariantBProps) {
 	return (
 		<div className={styles.variant}>
 			<h1>Create the childcare you need at a price you can afford</h1>
@@ -14,7 +18,7 @@ function VariantB(props) {
 			</h2>
 			<Router>
 				<Link
-					onClick={props.clickAction}
+					onClick={clickAction}
 					className={styles['play-button']}
 					to='/play'
 				>

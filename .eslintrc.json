@@ -16,6 +16,7 @@
 		"sourceType": "module"
 	},
 	"rules": {
+		"react/jsx-props-no-spreading":"off",
 		"react/prop-types": ["warn"],
 		"prefer-promise-reject-errors": ["off"],
 		"no-return-assign": ["off"],
