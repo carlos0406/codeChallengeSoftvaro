@@ -1,3 +1,4 @@
+import { useContext } from 'react';
 import Hero from '../components/container/Hero';
 import Booking from '../components/container/Booking';
 import Share from '../components/container/Share';
@@ -9,9 +10,11 @@ import Host from '../components/container/Host';
 import Footer from '../components/container/Footer';
 import Header from '../components/container/Header';
 import styles from '../styles/pages/lading.module.scss'
+import { AuthContext } from '../contexts/Auth';
 
 
 function LandingPage() {
+	const { singInWithGoogle } = useContext(AuthContext)
 	return (
 		<div className={styles.lading}>
 			<Header />

@@ -1,11 +1,15 @@
 import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { useContext } from 'react';
 import Badge from '../../utils/Badge.svg';
 import styles from '../../styles/components/header.module.scss'
+import { AuthContext } from '../../contexts/Auth';
 
 
 function Header() {
+	const { singInWithGoogle, user } = useContext(AuthContext)
 	return (
 		<div className={styles.header}>
+			<form />
 			<Router>
 				<div className={styles['left-header']}>
 					<Link className={styles.badge} to='/'>
@@ -21,14 +25,14 @@ function Header() {
 						<h5>Our Story</h5>
 					</Link>
 				</div>
-				<div className={styles['right-header']}>
+				<form className={styles['right-header']}>
 					<button type='button' className={styles['header-button']}>
 						<h5>Become a Nanny Share Host</h5>
 					</button>
-					<Link className={`${styles['header-link']} ${styles['sign-in']}`} to='/login'>
+					{user ? (<img src={user.avatar} alt="avatar" className={styles.avatar} />) : (<button type="button" className={styles['sign-in-button']} onClick={() => singInWithGoogle()}>
 						<h5>Sign In</h5>
-					</Link>
-				</div>
+					</button>)}
+				</form>
 			</Router>
 		</div>
 	);

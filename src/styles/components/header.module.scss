@@ -7,6 +7,9 @@
 	z-index: 99;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	form{
+		display: none;
+	}
 
 	.header-link {
 		color: #ffffff;
@@ -47,6 +50,19 @@
 		margin-top: 28px;
 	}
 
+	.sign-in-button {
+		place-items: center;
+		margin-top: 16px;
+		height: 44px;
+		width: 100px;
+		border-radius: 4px;
+		border: none;
+		background-color: transparent;
+		color: #ffffff;
+		cursor: pointer;
+
+	}
+
 	@media screen and (max-width: 1000px) {
 		.sign-in {
 			display: none;
@@ -61,4 +77,11 @@
 			display: none;
 		}
 	}
+}
+
+.avatar{
+border-radius: 100%;
+margin-top: 16px;
+height: 44px;
+margin-left: 10px;
 }
