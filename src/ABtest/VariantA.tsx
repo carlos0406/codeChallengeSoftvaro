@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link, BrowserRouter as Router } from 'react-router-dom';
 import PlayButton from '../utils/PlayButton.svg';
 import styles from '../styles/ABtest/variant.module.scss'

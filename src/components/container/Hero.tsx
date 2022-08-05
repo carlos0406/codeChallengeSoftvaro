@@ -1,11 +1,10 @@
-import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import ImgHero from '../../images/ImageHeader.png';
 import styles from '../../styles/components/hero.module.scss'
 
 
 
-function Hero () {
+function Hero() {
 	return (
 		<section className={styles.hero}>
 			<Router>

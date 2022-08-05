@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import HapuLogo from '../../utils/Logo.svg';
 import FacebookIcon from '../../utils/Facebook.svg';
@@ -38,7 +37,7 @@ function Footer() {
 						<img src={InstagramIcon} alt='Instagram' />
 					</Link>
 				</div>
-				<p className={styles.divider }/>
+				<p className={styles.divider} />
 				<h5 className={styles.copyright}>
 					Copyright © 2017 Hapu PTY Limited All rights reserved
 				</h5>

@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import CalendarIcon from '../../utils/CalendarIcon.svg';
 import styles from '../../styles/components/host.module.scss'

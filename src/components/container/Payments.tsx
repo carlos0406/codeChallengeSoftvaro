@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import ImgSect3 from '../../images/ImageSection3.png';
 import styles from '../../styles/components/payment.module.scss'

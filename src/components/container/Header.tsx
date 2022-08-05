@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import Badge from '../../utils/Badge.svg';
 import styles from '../../styles/components/header.module.scss'

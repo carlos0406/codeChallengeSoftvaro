@@ -1,4 +1,3 @@
-import React from 'react';
 import ImgSect5 from '../../images/ImageSection5.png';
 import styles from '../../styles/components/diary.module.scss'
 

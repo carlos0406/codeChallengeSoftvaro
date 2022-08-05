@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import styles from '../../styles/components/booking.module.scss'
 import ProfileImage from '../../utils/ProfileImage.svg';
