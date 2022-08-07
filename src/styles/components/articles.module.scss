@@ -1,0 +1,35 @@
+.article{
+	padding-top: 64px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #F2F2F2;
+	gap: 16px;
+	h2 {
+		margin-bottom: 16px;
+	}
+	.article-content{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width:50vw;
+		flex-direction: column;
+		img{
+			width: 40vw;
+		}
+	}
+	.divider {
+		width: 784px;
+		margin-top: 32px;
+		border-top: solid 2px #dfdfdf;
+	}
+
+	@media screen and (max-width: 1000px) {
+
+
+		.divider {
+			width: 328px;
+		}
+	}
+}

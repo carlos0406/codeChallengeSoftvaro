@@ -10,11 +10,10 @@ import Host from '../components/container/Host';
 import Footer from '../components/container/Footer';
 import Header from '../components/container/Header';
 import styles from '../styles/pages/lading.module.scss'
-import { AuthContext } from '../contexts/Auth';
+import Articles from '../components/container/Articles';
 
 
 function LandingPage() {
-	const { singInWithGoogle } = useContext(AuthContext)
 	return (
 		<div className={styles.lading}>
 			<Header />
@@ -26,6 +25,7 @@ function LandingPage() {
 			<Billing />
 			<Diary />
 			<Host />
+			<Articles />
 			<Footer />
 		</div>
 
