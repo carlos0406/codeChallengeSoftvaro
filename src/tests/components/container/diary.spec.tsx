@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import Diary from '../../../components/container/Diary'
 
-describe('payment  component', () => {
+describe('diary  component', () => {
 	it('renders correctly', () => {
 		render(<Diary />)
 		expect(screen.getByText("With the Hapu daily diary your nanny will be able to update "

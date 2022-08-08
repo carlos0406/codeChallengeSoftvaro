@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import Articles from '../../../components/container/Articles'
 
-describe('payment  component', () => {
+describe('article  component', () => {
 	const articles = [
 		{
 			title: "BBC agrees 'substantial damages' to ex-royal nanny over Diana interview - Reuters.com",

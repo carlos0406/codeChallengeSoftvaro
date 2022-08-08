@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import Hero from "../../../components/container/Hero"
 
-describe('payment  component', () => {
+describe('Hero  component', () => {
 	it('renders correctly', () => {
 		render(<Hero />)
 		expect(screen.getByText('Easily create or join a local nanny share with Hapu')).toBeInTheDocument()

@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import Share from '../../../components/container/Share'
 
-describe('payment  component', () => {
+describe('Share  component', () => {
 	it('renders correctly', () => {
 		render(<Share />)
 		expect(screen.getByText('Hapu means tribe')).toBeInTheDocument()

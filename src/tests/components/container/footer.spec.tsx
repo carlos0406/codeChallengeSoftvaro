@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import Footer from '../../../components/container/Footer'
 
-describe('payment  component', () => {
+describe('Footer  component', () => {
 	it('renders correctly', () => {
 		render(<Footer />)
 		expect(screen.getByText("Copyright © 2017 Hapu PTY Limited All rights reserved")).toBeInTheDocument()

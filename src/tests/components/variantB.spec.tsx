@@ -3,7 +3,7 @@ import VariantB from '../../ABtest/VariantB'
 
 
 
-describe('VariantA  component', () => {
+describe('VariantB  component', () => {
 
 	it('renders correctly', () => {
 		render(<VariantB clickAction={jest.fn()} />)
