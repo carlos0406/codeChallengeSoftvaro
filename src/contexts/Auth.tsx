@@ -1,5 +1,5 @@
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
-import { createContext, ReactNode, useEffect, useState } from 'react'
+import { createContext, ReactNode, useContext, useEffect, useState } from 'react'
 import { auth } from '../services/firebase'
 
 type User = {
@@ -63,4 +63,7 @@ export function AuthContextProvider({ children }: AuthContextProviderProps) {
 			{children}
 		</AuthContext.Provider>
 	)
+}
+export function useAuth() {
+	return useContext(AuthContext)
 }

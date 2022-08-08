@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useForm } from 'react-hook-form';
+import { mocked } from 'jest-mock'
 import styles from '../../styles/components/newsleter.module.scss'
 
 function NewsLetter() {

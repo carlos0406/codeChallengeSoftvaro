@@ -1,15 +1,14 @@
 import { BrowserRouter as Router, Link } from 'react-router-dom';
-import { useContext } from 'react';
 import Badge from '../../utils/Badge.svg';
 import styles from '../../styles/components/header.module.scss'
-import { AuthContext } from '../../contexts/Auth';
+import { useAuth } from '../../contexts/Auth';
 
 
 function Header() {
-	const { singInWithGoogle, user } = useContext(AuthContext)
+	const { singInWithGoogle, user } = useAuth()
 	return (
 		<div className={styles.header}>
-			<form />
+			teste
 			<Router>
 				<div className={styles['left-header']}>
 					<Link className={styles.badge} to='/'>
@@ -25,14 +24,14 @@ function Header() {
 						<h5>Our Story</h5>
 					</Link>
 				</div>
-				<form className={styles['right-header']}>
+				<div className={styles['right-header']}>
 					<button type='button' className={styles['header-button']}>
 						<h5>Become a Nanny Share Host</h5>
 					</button>
 					{user ? (<img src={user.avatar} alt="avatar" className={styles.avatar} />) : (<button type="button" className={styles['sign-in-button']} onClick={() => singInWithGoogle()}>
 						<h5>Sign In</h5>
 					</button>)}
-				</form>
+				</div>
 			</Router>
 		</div>
 	);

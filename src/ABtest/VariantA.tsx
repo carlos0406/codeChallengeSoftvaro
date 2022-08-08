@@ -16,6 +16,7 @@ function VariantA({ clickAction }: VariantAProps) {
 			<Router>
 				<Link
 					onClick={clickAction}
+					data-testid="link"
 					className={styles['play-button']}
 					to='/play'
 				>

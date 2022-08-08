@@ -19,6 +19,7 @@ function VariantB({ clickAction }: VariantBProps) {
 				<Link
 					onClick={clickAction}
 					className={styles['play-button']}
+					data-testid='link'
 					to='/play'
 				>
 					<img src={PlayButton} alt='Play Button' />
