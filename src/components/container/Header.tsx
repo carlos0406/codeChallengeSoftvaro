@@ -8,7 +8,6 @@ function Header() {
 	const { singInWithGoogle, user } = useAuth()
 	return (
 		<div className={styles.header}>
-			teste
 			<Router>
 				<div className={styles['left-header']}>
 					<Link className={styles.badge} to='/'>
