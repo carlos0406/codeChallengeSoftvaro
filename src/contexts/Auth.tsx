@@ -19,10 +19,11 @@ type AuthContextProviderProps = {
 export const AuthContext = createContext({} as AuthContextType)
 
 export function AuthContextProvider({ children }: AuthContextProviderProps) {
+	const [user, setUser] = useState<User>()
 	useEffect(() => {
-		const unsubscribe = auth.onAuthStateChanged(user => {
+		const unsubscribe = auth.onAuthStateChanged(userUnsubscribe => {
 			if (user) {
-				const { displayName, photoURL, uid } = user
+				const { displayName, photoURL, uid } = userUnsubscribe
 				if (!displayName || !photoURL) {
 					throw new Error('Missing informations from Google acount')
 				}
@@ -32,18 +33,17 @@ export function AuthContextProvider({ children }: AuthContextProviderProps) {
 					name: displayName,
 					avatar: photoURL
 				})
-				console.log(user)
+
 			}
 		})
 		return () => {
 			unsubscribe()
 		}
 	}, [])
-	const [user, setUser] = useState<User>()
+
 	async function singInWithGoogle() {
 		const provider = new GoogleAuthProvider()
 		const result = await signInWithPopup(auth, provider)
-
 		if (result.user) {
 			const { displayName, photoURL, uid } = result.user
 			if (!displayName || !photoURL) {
@@ -55,7 +55,6 @@ export function AuthContextProvider({ children }: AuthContextProviderProps) {
 				name: displayName,
 				avatar: photoURL
 			})
-			console.log(user.avatar)
 		}
 	}
 	return (

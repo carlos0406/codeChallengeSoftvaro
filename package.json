@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "-": "^0.0.1",
     "@hookform/error-message": "^2.0.0",
     "@marvelapp/react-ab-test": "^3.0.1",
     "@testing-library/jest-dom": "^5.11.4",
@@ -13,7 +12,6 @@
     "@types/react-dom": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.32.0",
     "@typescript-eslint/parser": "^5.32.0",
-    "D": "^1.0.0",
     "axios": "^0.27.2",
     "babel-jest": "26.6.0",
     "firebase": "^9.9.2",
@@ -28,7 +26,6 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "sass": "^1.54.0",
-    "styled-components": "^5.3.5",
     "testing-library": "^0.0.2",
     "web-vitals": "^1.0.1"
   },

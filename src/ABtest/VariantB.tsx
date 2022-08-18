@@ -1,6 +1,6 @@
 import { Link, BrowserRouter as Router } from 'react-router-dom';
-import PlayButton from '../utils/PlayButton.svg';
-import styles from '../styles/ABtest/variant.module.scss'
+import PlayButton from '../assets/PlayButton.svg';
+import styles from './variant.module.scss'
 
 interface VariantBProps {
 	clickAction: () => void;
