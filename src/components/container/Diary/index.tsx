@@ -5,7 +5,7 @@ function Diary() {
 	return (
 		<section className={styles.diary}>
 			<span className={styles.divider} />
-			<div className={styles['diary- content']}>
+			<div className={styles['diary-content']}>
 				<img src={ImgSect5} alt='Nanny Share Diary' />
 				<h2>Coming soon: Nanny Share Daily Diary! </h2>
 				<p className={styles['diary-text']}>

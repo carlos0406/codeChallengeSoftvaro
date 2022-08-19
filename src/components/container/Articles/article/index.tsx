@@ -1,5 +1,5 @@
 import { ArticleType } from "../../../../hooks/useArticles"
-import styles from "../styles.module.scss"
+import styles from "./styles.module.scss"
 
 interface ArticleProps {
 	article: ArticleType

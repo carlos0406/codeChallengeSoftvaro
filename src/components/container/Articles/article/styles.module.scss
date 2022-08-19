@@ -1,0 +1,16 @@
+.article-content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:50vw;
+	flex-direction: column;
+	img{
+		width: 40vw;
+	}
+}
+
+.divider {
+	width: 784px;
+	margin-top: 32px;
+	border-top: solid 2px #dfdfdf;
+}
