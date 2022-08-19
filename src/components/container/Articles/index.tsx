@@ -1,4 +1,5 @@
 import { ArticleType } from "../../../hooks/useArticles"
+import Article from "./Article"
 import styles from "./styles.module.scss"
 
 interface ArticleProps {
@@ -15,17 +16,7 @@ function Articles({ articles, isLoading }: ArticleProps) {
 		<section className={styles.article}>
 			<h2>News</h2>
 			{articles.map((article, index) => (
-				<div key={index} className={styles['article-content']}>
-					<h3>
-						{article.title}
-					</h3>
-					<p>{article.description}</p>
-					<a href={article.url} target="_blank" rel="noreferrer" >
-						<img src={article.urlToImage} alt="Imagem do artigo" />
-					</a>
-					<p className={styles.divider} />
-				</div>
-
+				<Article article={article} key={`${article.title}-${index}`} />
 			))}
 
 		</section>
